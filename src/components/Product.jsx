@@ -1,8 +1,12 @@
 import React, { useContext } from "react";
-import ProductContext from "../contexts/ProductContext";
+import ProductContext from "../contexts&reducer/ProductContext";
 
 export default function Product({ product }) {
-  const { handleAddCart } = useContext(ProductContext);
+  const { addProduct } = useContext(ProductContext);
+
+  const handleAddCart = (product) => {
+    addProduct(product);
+  };
 
   return (
     <div className="product-card" onClick={() => handleAddCart(product)}>

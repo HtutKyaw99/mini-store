@@ -5,7 +5,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
-import { ProductProvider } from "./contexts/ProductContext";
+import { ProductProvider } from "./contexts&reducer/ProductContext";
 
 export default function App() {
   const Layout = () => {

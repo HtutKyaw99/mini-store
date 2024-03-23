@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import ProductContext from "../contexts/ProductContext";
+
 import { Link } from "react-router-dom";
+import ProductContext from "../contexts&reducer/ProductContext";
 
 export default function Navbar() {
   const { cartItem } = useContext(ProductContext);
